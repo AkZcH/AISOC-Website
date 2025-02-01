@@ -113,7 +113,7 @@ body {
 .icon {
     width: 15px;
     height: 15px;
-    background-color: #d3d3d3;
+    background-color: transparent;
     border-radius: 50%;
 }
 
@@ -128,4 +128,44 @@ body {
     .card {
         width: 90%; /* 1 card per row on very small screens */
     }
+}
+
+.icon {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none; /* Removes link underline */
+}
+
+.icon svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover svg {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+
+}
+
+.logo-container:hover {
+    transform: scale(1.1); /* Slight scaling for emphasis */
+  }
+
+.logo-container img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
 }
